@@ -8,10 +8,9 @@ const Profile = () => {
             <ul>
                 <li><a href="https://www.linkedin.com/in/soumya-ranjan-hembram-87797a22b" target="_blank" rel="noreferrer">LinkedIn</a></li>
                 <li><a href="https://github.com/CHEPHYTY" target="_blank" rel="noreferrer">Github</a></li>
-                <li><a href="mailto: soumyahembra123@gmail.com">Email</a></li>
                 <li><a href="https://www.instagram.com/sanat__soumya/">Instagram</a></li>
             </ul>
-            <button>Contact Me</button>
+            <button href="mailto: soumyahembra123@gmail.com">Contact Me</button>
         </div>
     );
 }

@@ -1,38 +1,255 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.works {
+  margin-top: 50px;
+}
+
+.heading {
+  font-family: "Source Code Pro";
+  font-weight: 900;
+}
+
+.heading,
+.main-content {
+  margin: 0 20px;
+}
+
+
+.main-content {
+  margin-top: 20px;
+  font-family: "Cormorant Garamond", Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+
+.list-item {
+  margin-left: 40px;
+}
+
+
+.career {
+  margin-top: 30px;
+}
+
+.school {
+  margin: 0 20px;
+  margin-top: 20px;
+  font-family: "Cormorant Garamond", Arial, Helvetica, sans-serif;
+
+}
+
+.institute {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.project {
+  font-family: "Cormorant Garamond", Arial, Helvetica, sans-serif;
+  width: fit-content;
+  color: red;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 0, 0, 0);
+  margin-left: 20px;
+  margin-top: 10px;
+
+}
+
+.fa-arrow-right-long {
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+  font-size: 1.6rem;
+}
+
+.project:hover .fa-arrow-right-long {
+  transform: rotate(0deg);
+}
+
+.project:hover {
+  border-bottom: 2px solid rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.project-name {
+  font-size: 1.6rem;
+
+}
+
+.approach {
+  margin-top: 30px;
+}
+
+.tech {
+  padding: 0 20px;
+  font-family: "Cormorant Garamond", Arial, Helvetica, sans-serif;
+
+  strong {
+    font-size: 1.6rem;
+  }
+
+  ul {
+    margin-left: 30px;
+    margin-top: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.ending {
+  margin: 30px 0;
+  font-family: "Cormorant Garamond", Arial, Helvetica, sans-serif;
+
+  ul {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    list-style-type: none;
+  }
+}
+
+.profile {
+  padding: 0 20px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-family: "Cormorant Garamond", Arial, Helvetica, sans-serif;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.profile h3 {
+  margin-top: 10px;
+  font-size: 1.8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.profile p {
+  margin-top: 5px;
+  font-size: 1.3rem;
+}
+
+.profile ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.profile button {
+  height: 50px;
+  width: 200px;
+  margin-top: 20px;
+  border-radius: 50px;
+  border-width: 0;
+  font-size: 1.2rem;
+}
+
+.profile img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.about {
+  font-family: "Cormorant Garamond", Arial, Helvetica, sans-serif;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about h2 {
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+.about h3 {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: red;
+}
+
+.about p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Media Queries */
+@media (min-width: 440px) and (max-width:1023px) {
+  /* Add any additional styling for min-width: 430px here */
+
+  .profile ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1024px) {
+  .main {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .body {
+    width: 80%;
+  }
+
+  .about {
+    padding: 0 30px;
+  }
+
+  .about h3 {
+    font-size: 3rem;
+    /* Adjusted to correct 'font' property */
+  }
+
+  .profile {
+    width: 20%;
+    position: fixed;
+    right: 0;
+  }
+
+  .works {
+    padding: 0 30px;
+  }
+
+  .career {
+    padding: 0 30px;
+  }
+
+  .approach {
+    padding: 0 30px;
+  }
+
+  .skill {
+    padding: 0 30px;
+
+    ul {
+      font-size: 1.5rem;
+    }
+  }
+
+  .ending {
+    padding: 0 30px;
+  }
+
+  .ending-list {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 1.8rem;
+    list-style-type: none;
   }
 }

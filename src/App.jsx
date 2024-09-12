@@ -16,14 +16,14 @@ const App = () => {
     <>
       <Header />
       <main className='main'>
-        <Home />
-        <About />
-        <Skills />
-        <Services />
-        <Qualification />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
+        <section id="home"><Home /></section>
+        <section id="about"><About /></section>
+        <section id="skills"><Skills /></section>
+        <section id="services"><Services /></section>
+        <section id="qualification"><Qualification /></section>
+        <section id="portfolio"><Portfolio /></section>
+        <section id="testimonials"><Testimonials /></section>
+        <section id="contact"><Contact /></section>
       </main>
       <Footer />
       <ScrollUp />

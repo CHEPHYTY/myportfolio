@@ -1,29 +1,33 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-// import logo from './logo.svg';
 import './App.css';
-import About from './components/about';
-import Body from './components/body';
-import Career from './components/career';
-import End from './components/ending';
-import Profile from './components/profile';
-import Projects from './components/project';
-import Skill from './components/skill';
+import Header from './components/header/Header';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Skills from './components/skills/Skills';
+import Services from './components/services/Services';
+import Qualification from './components/qualification/Qualification';
+import Testimonials from './components/testimonials/Testimonials';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import ScrollUp from './components/scrollup/ScrollUp';
+import Portfolio from './components/projects/Portfolio';
 
-function App() {
+const App = () => {
   return (
-    <div className="main">
-
-      <Profile />
-      <div className="body">
+    <>
+      <Header />
+      <main className='main'>
+        <Home />
         <About />
-        <Body />
-        <Career />
-        <Projects />
-        <Skill />
-        <End />
-      </div>
-    </div>
-
+        <Skills />
+        <Services />
+        <Qualification />
+        <Portfolio />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollUp />
+    </>
   );
 }
 
